@@ -35,7 +35,7 @@ nav li{
 
 .container::after{
     content: "";
-    background-image: linear-gradient(to bottom right,rgb(59, 230, 236),rgb(245, 222, 95),rgb(231, 72, 99));
+    background-image: url(./istockphoto-479814132-612x612.webp);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -58,10 +58,20 @@ form{
 
 input{
     outline: none;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.5px black;
+    font: 900 1.2rem sans-serif;
     border: none;
     border-bottom: 2px solid white;
     background-color: transparent;
     padding: 1.2rem;
+    text-transform: uppercase;
+}
+
+input::placeholder{
+    color: white;
+    -webkit-text-stroke: 0px;
+    font: 200 1.2rem sans-serif;
 }
 button{
     border: none;
@@ -76,9 +86,7 @@ button:hover{
 
 .dict{
     z-index: 1;
-    /* position: relative; */
-    /* top: 0px; */
-    background-color: rgba(252, 246, 246, 0.3);
+    background-color: rgba(117, 88, 88, 0.649);
     border-radius: 16px;
     box-shadow: 0px 0px 25px  rgba(0,0,0) ;
     display: flex;
@@ -86,6 +94,10 @@ button:hover{
     flex-wrap: wrap;
 
 }
+.dictnone{
+    display: none;
+}
+
 .synonym{
     margin: 20px;
     border-left: 4px solid green;
@@ -94,7 +106,7 @@ button:hover{
 }
 .synonym p{
     /* margin: 20px; */
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .partofspeech{
@@ -105,7 +117,7 @@ button:hover{
 }
 .partofspeech p{
     /* margin: 20px; */
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .meaning {
@@ -119,5 +131,5 @@ button:hover{
     font-size: 1.4rem;
 }
 .meaning span,.synonym span ,.partofspeech span{
-    color: rgb(82, 80, 79);
+    color: rgb(237, 230, 227);
 }
